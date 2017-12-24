@@ -38,7 +38,7 @@ Sync every hour with cron schedule (container keeps running):
         -e BUCKET=mybucket \
         -e CRON_SCHEDULE="0 * * * *" \
         -e BUCKET_PATH=/path \
-        -e CRON_SCHEDULE="0 1 * * *"
+        -e CRON_SCHEDULE="0 1 * * *" \
         -v /home/user/data:/data:ro \
         jsonfry/s3-sync
 
