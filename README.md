@@ -4,7 +4,7 @@
 
 # jsonfry/s3-sync
 
-Docker container that periodically syncs a folder to Amazon S3 using the [AWS Command Line Interface tool](https://aws.amazon.com/cli/) and cron.
+Docker image that periodically syncs a folder to Amazon S3 using the [AWS Command Line Interface tool](https://aws.amazon.com/cli/) and cron.
 
 ## Usage
 
@@ -51,3 +51,4 @@ Sync just once (container is deleted afterwards):
         -e BUCKET=mybucket \
         -v /home/user/data:/data:ro \
         jsonfry/s3-sync now
+

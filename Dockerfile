@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:3.7
 
 RUN apk --no-cache add \
       py-pip \
@@ -6,8 +6,6 @@ RUN apk --no-cache add \
     pip install --upgrade \
       pip \
       awscli
-
-ENV KEY=,SECRET=,REGION=,BUCKET=,BUCKET_PATH=/,CRON_SCHEDULE="0 1 * * *",PARAMS=
 
 VOLUME ["/data"]
 
